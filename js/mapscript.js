@@ -28,7 +28,6 @@ function init() {
     '<h2 id="yellowmap">Grand Prismatic Spring</h2><img id="yellowmapimg" src="media/yellowstonefull.jpg" alt="hotspring in yellowstone national park.">'
   var infoGPS = new google.maps.InfoWindow({
     content: contentGPS,
-    maxWidth: 300,
   });
  
   var marker2 = new google.maps.Marker({
@@ -40,7 +39,6 @@ function init() {
     '<h2 id="skymap">Skydive The Rock - Beloit, WI</h2><img id="skymapimg" src="media/skydivingfull.jpg" alt="skydiving view of ground.">'
   var infoSky = new google.maps.InfoWindow({
     content: contentSky,
-    maxWidth: 300,
   });
   
   var marker3 = new google.maps.Marker({
@@ -52,7 +50,6 @@ function init() {
     '<h2 id="etmap">Extraterrestrial Highway - Rachel/Hiko, NV</h2><img id="etmapimg" src="media/rachel.jpg" alt="The Extraterresterial Highway sign, Outside Rachel, NV.">'
   var infoET = new google.maps.InfoWindow({
     content: contentET,
-    maxWidth: 300,
   });
   
   var marker4 = new google.maps.Marker({
@@ -64,7 +61,6 @@ function init() {
     '<h2 id="archmap">Arches National Park - Moab, UT</h2><img id="archmapimg" src="media/archesfull.jpg" alt="Arches Panoramic.">'
   var infoArch = new google.maps.InfoWindow({
     content: contentArch,
-    maxWidth: 300,
   });
   
   var marker5 = new google.maps.Marker({
@@ -76,7 +72,6 @@ function init() {
     '<h2 id="tormap">Toronto, Ontario, Canada.</h2><img id="tormapimg" src="media/torontofull.jpg" alt="Toronto skyline.">'
   var infoTor = new google.maps.InfoWindow({
     content: contentTor
-    maxWidth: 300,
   });
   
   var marker6 = new google.maps.Marker({
@@ -88,7 +83,6 @@ function init() {
     '<h2 id="giamap">Giant&#39;s Causeway&#44; Bushmills&#44; Northern Ireland</h2><img id="giamapimg" src="media/irelandfull.jpg" alt="Cliffside view, Northern Ireland.">'
   var infoGiants = new google.maps.InfoWindow({
     content: contentGiants,
-    maxWidth: 300,
   });
   
   google.maps.event.addListener(marker1, 'hover', function () {
