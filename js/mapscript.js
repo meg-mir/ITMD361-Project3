@@ -91,6 +91,30 @@ function init() {
     maxWidth: 300,
   });
   
+  google.maps.event.addListener(marker1, 'hover', function () {
+    infoGPS.open(map, marker1);
+  });
+  
+  google.maps.event.addListener(marker2, 'hover', function () {
+    infoSky.open(map, marker2);
+  });
+  
+  google.maps.event.addListener(marker3, 'hover', function () {
+    infoET.open(map, marker3);
+  });
+  
+  google.maps.event.addListener(marker4, 'hover', function () {
+    infoArch.open(map, marker4);
+  });
+  
+  google.maps.event.addListener(marker5, 'hover', function () {
+    infoTor.open(map, marker5);
+  });
+  
+  google.maps.event.addListener(marker6, 'hover', function () {
+    infoGiants.open(map, marker6);
+  });
+
   google.maps.event.addListener(marker1, 'click', function () {
     infoGPS.open(map, marker1);
     map.setZoom(20);
