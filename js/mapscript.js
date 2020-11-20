@@ -86,11 +86,11 @@ function init() {
   });
   
   marker1.addListener('mouseover', function() {
-    infowindow.open(map, this);
+    infoGPS.open(map, this);
 });
 
   marker1.addListener('mouseout', function() {
-    infowindow.close();
+    infoGPS.close();
 });
 
   
