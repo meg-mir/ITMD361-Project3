@@ -6,6 +6,7 @@ function init() {
   var locET = new google.maps.LatLng(37.532294, -115.231748);
   var locArch = new google.maps.LatLng(38.740044, -109.570700);
   var locTor = new google.maps.LatLng(43.632922, -79.411811);
+  var locGiants = new google.maps.LatLng(55.240564, -6.512272);
   var opt = {
     center: locDefault,
     zoom: 5,
@@ -73,35 +74,70 @@ function init() {
     content: contentTor
   });
   
+  var marker6 = new google.maps.Marker({
+    position: locGiants,
+    map: map,
+    animation: google.maps.Animation.DROP
+  });
+  var contentGiants =
+    '<h2 id="giamap">Giant&#39;s Causeway&#44; Bushmills&#44; Northern Ireland</h2><img id="giamapimg" src="media/irelandfull.jpg" alt="Cliffside view, Northern Ireland.">'
+  var infoTor = new google.maps.InfoWindow({
+    content: contentTor
+  });
   google.maps.event.addListener(marker1, 'click', function () {
     infoGPS.open(map, marker1);
     map.setZoom(20);
     map.setCenter(marker1.getPosition());
+    google.maps.event.addListener(map, 'click', function() {
+				infoGPS.close();
+			});
   });
   
   google.maps.event.addListener(marker2, 'click', function () {
     infoSky.open(map, marker2);
     map.setZoom(17);
     map.setCenter(marker2.getPosition());
+    google.maps.event.addListener(map, 'click', function() {
+				infoSky.close();
+			});
   });
   
   google.maps.event.addListener(marker3, 'click', function () {
     infoET.open(map, marker3);
     map.setZoom(17);
     map.setCenter(marker3.getPosition());
+    google.maps.event.addListener(map, 'click', function() {
+				infoET.close();
+			});
   });
   
   google.maps.event.addListener(marker4, 'click', function () {
     infoArch.open(map, marker4);
     map.setZoom(20);
     map.setCenter(marker4.getPosition());
+    google.maps.event.addListener(map, 'click', function() {
+				infoArch.close();
+			});
   });
   
   google.maps.event.addListener(marker5, 'click', function () {
     infoTor.open(map, marker5);
     map.setZoom(20);
     map.setCenter(marker5.getPosition());
+    google.maps.event.addListener(map, 'click', function() {
+				infoTor.close();
+			});
   });
+  
+  google.maps.event.addListener(marker6, 'click', function () {
+    infoGiants.open(map, marker6);
+    map.setZoom(20);
+    map.setCenter(marker6.getPosition());
+    google.maps.event.addListener(map, 'click', function() {
+				infoGiants.close();
+			});
+  });
+  
   google.maps.event.addDomListener(window, 'load', init);
   //window.addEventListener('load', init);
 }

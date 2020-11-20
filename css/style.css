@@ -312,21 +312,27 @@ font-family: sans-serif;
   grid-area: email2;
 }
 /*Maps Specific*/
+#mapbody img  {
+  border-radius: 0;
+}
 #mapbody  {
-  height: 100%
+  height: 100%;
+  background: radial-gradient(circle, rgba(133,255,89,1) 0%, rgba(128,134,251,1) 33%, rgba(103,131,130,1) 70%, rgba(70,88,73,1) 100%);
 }
 #mapholder  {
-  width: 1600px;
-  height: 900px;
-  background-color:#c00;
+  width: 1366px;
+  height: 768px;
   margin: 0 auto;
   overflow: hidden;
 }
+#maptitle {
+  text-align: center;
+}
 #map {
+  border-radius:0%;
   width:1366px;
   height: 768px;
   background-color: #ccc;
-  margin: 30px auto;
   }
  #yellowmapimg {
    border-radius 0%;
@@ -360,6 +366,13 @@ font-family: sans-serif;
    text-align: center;
  }
  #tormapimg {
+   border-radius 0%;
+   width: 500px;
+ }
+ #giamap {
+   text-align: center;
+ }
+ #giamapimg {
    border-radius 0%;
    width: 500px;
  }
