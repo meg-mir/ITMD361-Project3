@@ -319,7 +319,7 @@ background: #868695;
 font-family: sans-serif;
 }
 #restext ul{
-  padding-inline-start: 25px;
+  padding-left: 25px;
 }
 #restext {
   padding-left: 1%;
@@ -414,7 +414,6 @@ font-family: sans-serif;
   }
 }
    #yellowmapimg {
-     border-radius 0%;
      width: 500px;
   } 
    #yellowmap {
@@ -424,35 +423,30 @@ font-family: sans-serif;
      text-align: center;
   }
    #skymapimg {
-     border-radius: 0%;
      width: 500px;
   }
   #etmap {
      text-align: center;
   }
   #etmapimg {
-     border-radius 0%;
      width: 500px;
   }
   #archmap {
      text-align: center;
   }
   #archmapimg {
-     border-radius 0%;
      width: 500px;
   }
   #tormap {
      text-align: center;
   }
    #tormapimg {
-     border-radius 0%;
      width: 500px;
   }
    #giamap {
      text-align: center;
   }
    #giamapimg {
-     border-radius 0%;
      width: 500px;
   }
 
