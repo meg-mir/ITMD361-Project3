@@ -88,42 +88,42 @@ function init() {
   marker1.addListener('mouseover', function() {
     infoGPS.open(map, this);
   });
-  infoGPS.addListener('mouseout', function() {
+  marker1.addListener('mouseout', function() {
     infoGPS.close();
   });
 
   marker2.addListener('mouseover', function() {
     infoSky.open(map, this);
   });
-  infoSky.addListener('mouseout', function() {
+  marker2.addListener('mouseout', function() {
     infoSky.close();
   });
 
   marker3.addListener('mouseover', function() {
     infoET.open(map, this);
   });
-  infoET.addListener('mouseout', function() {
+  marker3.addListener('mouseout', function() {
     infoET.close();
   });
 
   marker4.addListener('mouseover', function() {
     infoArch.open(map, this);
   });
-  infoArch.addListener('mouseout', function() {
+  marker4.addListener('mouseout', function() {
     infoGPS.close();
   });
 
   marker5.addListener('mouseover', function() {
     infoTor.open(map, this);
   });
-  infoTor.addListener('mouseout', function() {
+  marker5.addListener('mouseout', function() {
     infoTor.close();
   });
 
   marker6.addListener('mouseover', function() {
     infoGiants.open(map, this);
   });
-  infoGiants.addListener('mouseout', function() {
+  marker6.addListener('mouseout', function() {
     infoGiants.close();
   });
 
