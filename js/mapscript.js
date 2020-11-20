@@ -85,9 +85,14 @@ function init() {
     content: contentGiants,
   });
   
-  google.maps.event.addListener(marker1, 'hover', function () {
-    infoGPS.open(map, marker1);
-  });
+  marker1.addListener('mouseover', function() {
+    infowindow.open(map, this);
+});
+
+  marker1.addListener('mouseout', function() {
+    infowindow.close();
+});
+
   
   google.maps.event.addListener(marker2, 'hover', function () {
     infoSky.open(map, marker2);
