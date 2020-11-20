@@ -81,8 +81,8 @@ function init() {
   });
   var contentGiants =
     '<h2 id="giamap">Giant&#39;s Causeway&#44; Bushmills&#44; Northern Ireland</h2><img id="giamapimg" src="media/irelandfull.jpg" alt="Cliffside view, Northern Ireland.">'
-  var infoTor = new google.maps.InfoWindow({
-    content: contentTor
+  var infoGiants = new google.maps.InfoWindow({
+    content: contentGiants
   });
   google.maps.event.addListener(marker1, 'click', function () {
     infoGPS.open(map, marker1);
