@@ -87,85 +87,74 @@ function init() {
   
   marker1.addListener('mouseover', function() {
     infoGPS.open(map, this);
-});
-
-  marker1.addListener('mouseout', function() {
+  });
+  infoGPS.addListener('mouseout', function() {
     infoGPS.close();
-});
+  });
 
-  
-  google.maps.event.addListener(marker2, 'hover', function () {
-    infoSky.open(map, marker2);
+  marker2.addListener('mouseover', function() {
+    infoSky.open(map, this);
   });
-  
-  google.maps.event.addListener(marker3, 'hover', function () {
-    infoET.open(map, marker3);
+  infoSky.addListener('mouseout', function() {
+    infoSky.close();
   });
-  
-  google.maps.event.addListener(marker4, 'hover', function () {
-    infoArch.open(map, marker4);
+
+  marker3.addListener('mouseover', function() {
+    infoET.open(map, this);
   });
-  
-  google.maps.event.addListener(marker5, 'hover', function () {
-    infoTor.open(map, marker5);
+  infoET.addListener('mouseout', function() {
+    infoET.close();
   });
-  
-  google.maps.event.addListener(marker6, 'hover', function () {
-    infoGiants.open(map, marker6);
+
+  marker4.addListener('mouseover', function() {
+    infoArch.open(map, this);
+  });
+  infoArch.addListener('mouseout', function() {
+    infoGPS.close();
+  });
+
+  marker5.addListener('mouseover', function() {
+    infoTor.open(map, this);
+  });
+  infoTor.addListener('mouseout', function() {
+    infoTor.close();
+  });
+
+  marker6.addListener('mouseover', function() {
+    infoGiants.open(map, this);
+  });
+  infoGiants.addListener('mouseout', function() {
+    infoGiants.close();
   });
 
   google.maps.event.addListener(marker1, 'click', function () {
-    infoGPS.open(map, marker1);
     map.setZoom(20);
     map.setCenter(marker1.getPosition());
-    google.maps.event.addListener(map, 'click', function() {
-				infoGPS.close();
-			});
   });
   
   google.maps.event.addListener(marker2, 'click', function () {
-    infoSky.open(map, marker2);
     map.setZoom(17);
     map.setCenter(marker2.getPosition());
-    google.maps.event.addListener(map, 'click', function() {
-				infoSky.close();
-			});
   });
   
   google.maps.event.addListener(marker3, 'click', function () {
-    infoET.open(map, marker3);
     map.setZoom(17);
     map.setCenter(marker3.getPosition());
-    google.maps.event.addListener(map, 'click', function() {
-				infoET.close();
-			});
   });
   
   google.maps.event.addListener(marker4, 'click', function () {
-    infoArch.open(map, marker4);
     map.setZoom(20);
     map.setCenter(marker4.getPosition());
-    google.maps.event.addListener(map, 'click', function() {
-				infoArch.close();
-			});
   });
   
   google.maps.event.addListener(marker5, 'click', function () {
-    infoTor.open(map, marker5);
     map.setZoom(20);
     map.setCenter(marker5.getPosition());
-    google.maps.event.addListener(map, 'click', function() {
-				infoTor.close();
-			});
   });
   
   google.maps.event.addListener(marker6, 'click', function () {
-    infoGiants.open(map, marker6);
     map.setZoom(20);
     map.setCenter(marker6.getPosition());
-    google.maps.event.addListener(map, 'click', function() {
-				infoGiants.close();
-			});
   });
   
   google.maps.event.addDomListener(window, 'load', init);
