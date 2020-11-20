@@ -263,119 +263,199 @@ a.navlink:hover {
   padding: 0px 2px 0px 10px;
 }
 /* Resume specific CSS */
+@media only screen and (min-width: 601px) {
+  #resbody {
+  background: #C0C0C0;
+  font-family: sans-serif;
+  }
+  #restext {
+    padding-left: 10%;
+    list-style-type: square;
+    padding-top: 100px;
+    width: 800px;
+    word-wrap: normal;
+  }
+  #contactinfocontain {
+    display: grid;
+    grid-template-columns:250px 250px 300px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". name ."
+      "phone . email1"
+      ". . email2";
+    align-items: center;
+    line-height: .75;
+    column-count: 3;
+    column-gap: 10px;
+  }
+  #name {
+    font-size: 1.825em;
+    font-variant: small-caps;
+    padding-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    grid-area: name;
+  }
+  #number {
+    font-size: 1.25em;
+    padding-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    grid-area: phone;
+  }
+  #email1 {
+    font-size: 1em;
+    flex-grow: 3;
+    grid-area: email1;
+  }
+  #email2 {
+    font-size: 1em;
+    grid-area: email2;
+  }
+}
+
 #resbody {
-background: #C0C0C0;
+background: #868695;
 font-family: sans-serif;
 }
+#restext ul{
+  padding-inline-start: 25px;
+}
 #restext {
-  padding-left: 10%;
+  padding-left: 1%;
+  padding-right: 1%;
   list-style-type: square;
-  padding-top: 100px;
-  width: 800px;
+  padding-top: 5%;
+  width: 100%;
   word-wrap: normal;
+  line-height: 1.25;
 }
 #contactinfocontain {
-  display: grid;
-  grid-template-columns:250px 250px 300px;
-  grid-template-rows: auto;
-  grid-template-areas:
-    ". name ."
-    "phone . email1"
-    ". . email2";
-  align-items: center;
-  line-height: .75;
-  column-count: 3;
-  column-gap: 10px;
+  text-align: center;
+  line-height: 1.25;
 }
 #name {
-  font-size: 1.825em;
+  font-size: 20px;
   font-variant: small-caps;
   padding-top: 20px;
   border-radius: 10px;
   font-weight: bold;
-  grid-area: name;
 }
 #number {
-  font-size: 1.25em;
+  font-size: 15px;
   padding-top: 20px;
   border-radius: 10px;
   font-weight: bold;
-  grid-area: phone;
 }
 #email1 {
-  font-size: 1em;
-  flex-grow: 3;
-  grid-area: email1;
+  font-size: 15px;
 }
 #email2 {
-  font-size: 1em;
-  grid-area: email2;
+  font-size: 15px;
 }
 /*Maps Specific*/
-#mapbody img  {
-  border-radius: 0;
-}
-#mapbody  {
-  height: 100%;
-  background: radial-gradient(circle, rgba(133,255,89,1) 0%, rgba(128,134,251,1) 33%, rgba(103,131,130,1) 70%, rgba(70,88,73,1) 100%);
-}
-#mapholder  {
-  width: 1366px;
-  height: 768px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-#maptitle {
-  text-align: center;
-}
-#map {
-  border-radius:0%;
-  width:1366px;
-  height: 768px;
-  background-color: #ccc;
+@media only screen and (min-width: 601px) {
+  #mapbody img  {
+    border-radius: 0;
   }
- #yellowmapimg {
-   border-radius 0%;
-   width: 500px;
- } 
- #yellowmap {
-   text-align: center;
- }
- #skymap {
-   text-align: center;
- }
- #skymapimg {
-   border-radius 0%;
-   width: 500px;
- }
-#etmap {
-   text-align: center;
- }
-#etmapimg {
-   border-radius 0%;
-   width: 500px;
- }
-#archmap {
-   text-align: center;
- }
-#archmapimg {
-   border-radius 0%;
-   width: 500px;
- }
-#tormap {
-   text-align: center;
- }
- #tormapimg {
-   border-radius 0%;
-   width: 500px;
- }
- #giamap {
-   text-align: center;
- }
- #giamapimg {
-   border-radius 0%;
-   width: 500px;
- }
+  #mapbody  {
+    height: 100%;
+    background: radial-gradient(circle, rgba(133,255,89,1) 0%, rgba(128,134,251,1) 33%, rgba(103,131,130,1) 70%, rgba(70,88,73,1) 100%);
+  }
+@media only screen and (min-width: 1367px) {
+  #mapholder  {
+    width: 1366px;
+    height: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #maptitle {
+    text-align: center;
+  }
+  #map {
+    border-radius:0%;
+    width:1366px;
+    height: 768px;
+    background-color: #ccc;
+  }
+}
+@media only screen and (max-width: 1366px) and (min-width: 641px) {
+  #mapholder  {
+    width: 640px;
+    height: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #maptitle {
+    text-align: center;
+  }
+  #map {
+    border-radius:0%;
+    width:640px;
+    height: 768px;
+    background-color: #ccc;
+  }
+}
+@media only screen and (max-width: 640px) and (min-width: 320px) {
+  #mapholder  {
+    width: 320px;
+    height: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #maptitle {
+    text-align: center;
+  }
+  #map {
+    border-radius:0%;
+    width:320px;
+    height: 768px;
+    background-color: #ccc;
+  }
+}
+   #yellowmapimg {
+     border-radius 0%;
+     width: 500px;
+  } 
+   #yellowmap {
+     text-align: center;
+  }
+   #skymap {
+     text-align: center;
+  }
+   #skymapimg {
+     border-radius 0%;
+     width: 500px;
+  }
+  #etmap {
+     text-align: center;
+  }
+  #etmapimg {
+     border-radius 0%;
+     width: 500px;
+  }
+  #archmap {
+     text-align: center;
+  }
+  #archmapimg {
+     border-radius 0%;
+     width: 500px;
+  }
+  #tormap {
+     text-align: center;
+  }
+   #tormapimg {
+     border-radius 0%;
+     width: 500px;
+  }
+   #giamap {
+     text-align: center;
+  }
+   #giamapimg {
+     border-radius 0%;
+     width: 500px;
+  }
+
 /*Slider Specific*/
 /** VARIABLES
 ===================================*/
@@ -384,6 +464,10 @@ font-family: sans-serif;
 .slide-contain { 
   margin: 0 auto; 
   width:1000px; 
+}
+.slidecontain p {
+   font-weight: bold;
+   color: #bdbdae;
 }
 .slidepic img {
   border-radius: 0;
@@ -560,4 +644,54 @@ ul.bxslider {
   display: block;
   font-size: .85em;
   padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  body  {
+    font-size: 13px;
+  }
+  .bodytext  {
+    font-size: 13px;
+  }
+  h1  {
+    font-size: 25px;
+  }
+  h2  {
+    font-size: 25px;
+  }
+  h3  {
+    font-size: 20px;
+  }
+  h4  {
+    font-size: 20px;
+  }
+  p {
+    font-size: 13px;
+  }
+  a.navlink:link  {
+    font-size: 13px;
+  }
+  #navcontainer {
+    top: 3px;
+  }
+  #homebody {
+  background: rgb(40,0,184);
+  background: linear-gradient(0deg, rgba(253,153,45,1) 0%, rgba(40,0,184,1) 100%);
+  }
+  a:visited {
+    color: #ff0000;
+  }
+  .petlist {
+    font-size: 10px;
+    letter-spacing: 0.015em;
+    line-height: 1.6;   
+  }
+  .petlist li {
+    margin: 0 0 15px 0;
+  }
+  .lighttexth1 {
+    font-size: 25px;
+  }
+  .lighttext{
+    font-size: 13px;
+  }
 }
