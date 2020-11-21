@@ -10,11 +10,21 @@ function init() {
   var opt = {
     center: locDefault,
     zoom: 5,
+    zoomControl: true,
+    scaleControl: true,
+    scaleControl: true,
     mapTypeId: google.maps.MapTypeId.HYBRID,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-      position: google.maps.ControlPosition.TOP_CENTER
-    }
+      position: google.maps.ControlPosition.TOP_CENTER,
+      mapTypeIds: ['roadmap', 'hybrid', 'terrain', 'satellite']
+    },
+     zoomControlOptions: {
+      position: google.maps.ControlPosition.RIGHT_CENTER,
+    },
+    streetViewControlOptions: {
+      position: google.maps.ControlPosition.RIGHT_BOTTOM,
+    },
   };
   
   var map = new google.maps.Map(mp, opt);
