@@ -1,5 +1,5 @@
 function init() {
-  var mp = document.getElementById("map")
+  var mp = document.getElementById("map");
   var locDefault = new google.maps.LatLng(39.809734, -98.555620);
   var locGPS = new google.maps.LatLng(44.524937, -110.838166);
   var locSky = new google.maps.LatLng(42.499129, -88.968893);
@@ -11,7 +11,6 @@ function init() {
     center: locDefault,
     zoom: 5,
     zoomControl: true,
-    scaleControl: true,
     scaleControl: true,
     mapTypeId: google.maps.MapTypeId.HYBRID,
     mapTypeControlOptions: {
@@ -38,7 +37,7 @@ function init() {
     animation: google.maps.Animation.DROP
   });
   var contentGPS =
-    '<h2 id="yellowmap">Grand Prismatic Spring</h2><img id="yellowmapimg" src="media/yellowstonefull.jpg" alt="hotspring in yellowstone national park.">'
+    '<h2 id="yellowmap">Grand Prismatic Spring</h2><img id="yellowmapimg" src="media/yellowstonefull.jpg" alt="hotspring in yellowstone national park.">';
   var infoGPS = new google.maps.InfoWindow({
     content: contentGPS,
   });
@@ -49,7 +48,7 @@ function init() {
     animation: google.maps.Animation.DROP
   });
   var contentSky =
-    '<h2 id="skymap">Skydive The Rock - Beloit, WI</h2><img id="skymapimg" src="media/skydivingfull.jpg" alt="skydiving view of ground.">'
+    '<h2 id="skymap">Skydive The Rock - Beloit, WI</h2><img id="skymapimg" src="media/skydivingfull.jpg" alt="skydiving view of ground.">';
   var infoSky = new google.maps.InfoWindow({
     content: contentSky,
   });
@@ -60,7 +59,7 @@ function init() {
     animation: google.maps.Animation.DROP
   });
   var contentET =
-    '<h2 id="etmap">Extraterrestrial Highway - Rachel/Hiko, NV</h2><img id="etmapimg" src="media/rachel.jpg" alt="The Extraterresterial Highway sign, Outside Rachel, NV.">'
+    '<h2 id="etmap">Extraterrestrial Highway - Rachel/Hiko, NV</h2><img id="etmapimg" src="media/rachel.jpg" alt="The Extraterresterial Highway sign, Outside Rachel, NV.">';
   var infoET = new google.maps.InfoWindow({
     content: contentET,
   });
@@ -71,7 +70,7 @@ function init() {
     animation: google.maps.Animation.DROP
   });
   var contentArch =
-    '<h2 id="archmap">Arches National Park - Moab, UT</h2><img id="archmapimg" src="media/archesfull.jpg" alt="Arches Panoramic.">'
+    '<h2 id="archmap">Arches National Park - Moab, UT</h2><img id="archmapimg" src="media/archesfull.jpg" alt="Arches Panoramic.">';
   var infoArch = new google.maps.InfoWindow({
     content: contentArch,
   });
@@ -82,7 +81,7 @@ function init() {
     animation: google.maps.Animation.DROP
   });
   var contentTor =
-    '<h2 id="tormap">Toronto, Ontario, Canada.</h2><img id="tormapimg" src="media/torontofull.jpg" alt="Toronto skyline.">'
+    '<h2 id="tormap">Toronto, Ontario, Canada.</h2><img id="tormapimg" src="media/torontofull.jpg" alt="Toronto skyline.">';
   var infoTor = new google.maps.InfoWindow({
     content: contentTor
   });
@@ -93,7 +92,7 @@ function init() {
     animation: google.maps.Animation.DROP
   });
   var contentGiants =
-    '<h2 id="giamap">Giant&#39;s Causeway&#44; Bushmills&#44; Northern Ireland</h2><img id="giamapimg" src="media/irelandfull.jpg" alt="Cliffside view, Northern Ireland.">'
+    '<h2 id="giamap">Giant&#39;s Causeway&#44; Bushmills&#44; Northern Ireland</h2><img id="giamapimg" src="media/irelandfull.jpg" alt="Cliffside view, Northern Ireland.">';
   var infoGiants = new google.maps.InfoWindow({
     content: contentGiants,
   });
