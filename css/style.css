@@ -224,6 +224,7 @@ a.navlink:hover {
 .lighttext {
   color: #bdbdae;
   font-size:1.75vw;
+  line-height: 1.25;
 }
 .piccontain {
   align-items: center;
