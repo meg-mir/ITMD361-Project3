@@ -110,7 +110,7 @@ function init() {
     infoArch.open(map, this);
   });
   marker4.addListener('mouseout', function() {
-    infoGPS.close();
+    infoArch.close();
   });
 
   marker5.addListener('mouseover', function() {
