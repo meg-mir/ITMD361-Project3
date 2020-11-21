@@ -20,7 +20,7 @@ function init() {
   var map = new google.maps.Map(mp, opt);
   var mq = window.matchMedia( "(max-width: 1366px)" );
     if (mq.matches) {
-    map.setZoom(3);
+    map.setZoom(4);
     }
   var marker1 = new google.maps.Marker({
     position: locGPS,
