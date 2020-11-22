@@ -11,18 +11,21 @@ function init() {
     center: locDefault,
     zoom: 5,
     zoomControl: true,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.SMALL
+    },
     scaleControl: true,
     mapTypeId: google.maps.MapTypeId.HYBRID,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
       position: google.maps.ControlPosition.TOP_CENTER,
-      mapTypeIds: ['roadmap', 'hybrid', 'terrain', 'satellite']
+      mapTypeIds: ["roadmap", "hybrid", "terrain", "satellite"],
     },
      zoomControlOptions: {
       position: google.maps.ControlPosition.RIGHT_CENTER,
     },
     streetViewControlOptions: {
-      position: google.maps.ControlPosition.RIGHT_BOTTOM,
+      position: google.maps.ControlPosition.RIGHT_TOP,
     },
   };
   
