@@ -606,10 +606,10 @@ ul.bxslider {
   }
 }
 /*Map page*/
-@media only screen and (min-width: 1367px) {
+@media only screen and (min-width: 1380px) {
   #mapholder  {
-    width: 1366px;
-    height: 768px;
+    width: 1380px;
+    height:900px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -623,10 +623,10 @@ ul.bxslider {
     background-color: #ccc;
   }
 }
-@media only screen and (max-width: 1366px) and (min-width: 641px) {
+@media only screen and (max-width: 1379px) and (min-width: 641px) {
   #mapholder  {
     width: 640px;
-    height: 768px;
+    height: 900px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -648,7 +648,7 @@ ul.bxslider {
 @media only screen and (max-width: 640px) and (min-width: 320px) {
   #mapholder  {
     width: 320px;
-    height: 768px;
+    height: 950px;
     margin: 0 auto;
     overflow: hidden;
   }
