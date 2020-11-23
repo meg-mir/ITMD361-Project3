@@ -1,6 +1,6 @@
 function init() {
   var mp = document.getElementById("map");
-  var locDefault = new google.maps.LatLng(39.809734, -98.555620);
+  var locDefault = new google.maps.LatLng(55.760583, -97.862694);
   var locGPS = new google.maps.LatLng(44.524937, -110.838166);
   var locSky = new google.maps.LatLng(42.499129, -88.968893);
   var locET = new google.maps.LatLng(37.532294, -115.231748);
