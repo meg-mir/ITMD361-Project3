@@ -11,23 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-    <script  type="text/javascript" src="js/mapscript.js"></script>
-    <script>
-    $(document).ready(function(){
-      $('.slider').bxSlider({
-      slideWidth: 900,
-      adaptiveHeight: true,
-      shrinkItems: true,
-      controls: true,
-      autoControls: true,
-      auto: true,
-      autoStart: true,
-      autoHover: true,
-      });
-    });
-    </script>
+    <script  type="text/javascript" src="js/script.js"></script>
   </head>
-  <body id="genbody">
+  <body onload="slideInit"  id="genbody">
     <header id="navcontainer">
       <nav>
         <div class="navlist">

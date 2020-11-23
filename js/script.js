@@ -174,7 +174,6 @@ function init() {
   
   google.maps.event.addDomListener(window, 'load', init);
 }
-function slideInit() {
   $(document).ready(function(){
       $('.slider').bxSlider({
       slideWidth: 900,
@@ -186,6 +185,4 @@ function slideInit() {
       autoStart: true,
       autoHover: true,
       });
-      });
-      window.addEventListener('load', init);
-}
+  });
