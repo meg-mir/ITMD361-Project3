@@ -9,7 +9,7 @@ function init() {
   var locGiants = new google.maps.LatLng(55.240564, -6.512272);
   var opt = {
     center: locDefault,
-    zoom: 5,
+    zoom: 4,
     zoomControl: true,
     zoomControlOptions: {
       style: google.maps.ZoomControlStyle.SMALL
@@ -32,7 +32,7 @@ function init() {
   var map = new google.maps.Map(mp, opt);
   var mq = window.matchMedia( "(max-width: 1366px)" );
     if (mq.matches) {
-    map.setZoom(4);
+    map.setZoom(3);
     }
   var marker1 = new google.maps.Marker({
     position: locGPS,
