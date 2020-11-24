@@ -184,5 +184,6 @@ function init() {
       auto: true,
       autoStart: true,
       autoHover: true,
+      captions: true,
       });
   });
