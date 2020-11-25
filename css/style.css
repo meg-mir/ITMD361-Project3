@@ -28,6 +28,7 @@ body:after {
 .imgitem {
   padding-bottom: 7.5%;
   padding-top: 0%;
+  width: 45%;
 }
 /* Navigation Panel CSS */
 a.navlink:link {
@@ -357,9 +358,9 @@ font-family: sans-serif;
 ===================================*/
 /** RESET AND LAYOUT
 ===================================*/
-.slide-contain { 
+.slidecontain { 
   margin: 0 auto; 
-  width:1000px; 
+  width:30%; 
  }
 .slidecontain p {
    font-weight: bold;
@@ -367,12 +368,12 @@ font-family: sans-serif;
 }
 .slidepic img {
   border-radius: 0;
-  max-height: 800px;
+  max-height: 1200px;
   width:auto;
 }
 .bx-wrapper {
   position: relative;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -583,6 +584,10 @@ ul.bxslider {
     color: #ff0000;
   }
 /*dog page*/
+.slidecontain { 
+  margin: 0 auto; 
+  width:75%; 
+ }
   .petlist {
     font-size: 10px;
     letter-spacing: 0.015em;
@@ -603,6 +608,7 @@ ul.bxslider {
   }
   .imgitem  {
     color: #bdbdae;
+    width:75%
   }
   #genbody {
   background: rgb(69,255,0);

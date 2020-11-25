@@ -174,16 +174,16 @@ function init() {
   
   google.maps.event.addDomListener(window, 'load', init);
 }
-  $(document).ready(function(){
-      $('.slider').bxSlider({
-      slideWidth: 900,
-      adaptiveHeight: true,
-      shrinkItems: true,
-      controls: true,
-      autoControls: true,
-      auto: true,
-      autoStart: true,
-      autoHover: true,
-      captions: true,
-      });
-  });
+$(document).ready(function(){
+    $('.slider').bxSlider({
+    slideWidth: 900,
+    adaptiveHeight: true,
+    shrinkItems: true,
+    controls: true,
+    autoControls: true,
+    auto: true,
+    autoStart: true,
+    autoHover: true,
+    captions: true,
+    });
+});
